@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.App {
+    height: 100vh;
+    max-width: 1440px;
+    margin: auto;
+    padding: 30px 5px;
+}
+
+.landing {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.landing>div {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.landing-title {
+    font-size: 24px;
+}
+
+.landing-description {
+    font-size: 15px;
+    opacity: 0.7;
+    margin-bottom: 15px;
+    width: 250px;
+    font-size: 600;
+}
+
+
+.button {
+    padding: 10px;
+    font-size: 18px;
+    min-width: 300px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid white;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+.button:focus {
+    border: 1px solid green;
+}
+
+.button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
