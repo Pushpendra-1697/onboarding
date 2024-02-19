@@ -236,3 +236,71 @@ body {
 .profile>div>div>div:last-child>p {
     opacity: 0.8;
 }
+
+/* Media queries for mobile view */
+@media all and (min-width: 320px) and (max-width:480px) {
+
+    .landing-title,
+    .login>h1,
+    .signup>h1,
+    .profile>h1 {
+        font-size: 25px;
+    }
+
+    .landing-description,
+    .login>p {
+        font-size: 14px;
+    }
+
+    .button {
+        font-size: 15px;
+        padding: 10px 5px;
+        min-width: 200px;
+        border-radius: 10px;
+    }
+
+    .login,
+    .signup {
+        width: 60%;
+    }
+
+    .form-group {
+        min-width: 200px;
+    }
+
+    .form-group>label>span,
+    .agency>label>span {
+        font-size: 12px;
+    }
+
+    .form-group>label,
+    .login>div input::placeholder,
+    .signup>div input::placeholder {
+        font-size: 12px;
+        min-width: 100px;
+    }
+
+    .agency {
+        font-size: 12px;
+    }
+
+    .agency>div>div>input[type="radio"] {
+        width: 15px;
+        height: 15px;
+    }
+
+    .profile>div>div:last-child,
+    .profile>div>div>div:last-child>p {
+        font-size: 14px;
+    }
+
+    .profile>div>div>div:first-child {
+        min-width: 80px;
+        min-height: 80px;
+    }
+
+    #camara {
+        width: 14px;
+        height: 14px;
+    }
+}
